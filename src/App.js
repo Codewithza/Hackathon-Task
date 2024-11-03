@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import AddNote from './components/AddNote';
+import NoteList from './components/NoteList';
+import LoginForm from './components/LoginForm';
+import SignUpForm from './components/signup/SignUpForm';
+import './App.css'; // Add your styles here
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+       <h1>Collaborative Study Notes App</h1>
+      <Router>
+      <Routes>
+        <Route path="/" element={<AddNote />} />
+        <Route path="/" element={<NoteList />} />
+        <Route path="/login" element={<LoginForm />} />
+        <Route path="/signup" element={<SignUpForm />} />
+      </Routes>
+      </Router>
     </div>
   );
 }
