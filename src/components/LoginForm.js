@@ -55,7 +55,7 @@ const FormContainer = styled.div`
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
   background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

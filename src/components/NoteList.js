@@ -1,7 +1,8 @@
 // src/components/NoteList.js
-import React from 'react';
+
 import { useSelector } from 'react-redux';
 import NoteItem from './NoteItem';
+
 
 const NoteList = () => {
   const notes = useSelector((state) => state.notes);
@@ -16,3 +17,4 @@ const NoteList = () => {
 };
 
 export default NoteList;
+

@@ -2,12 +2,11 @@
 .app-container {
   max-width: 800px;
   margin: 30px auto;
-  padding:  20px;
+  padding: 45px;
   background: linear-gradient(90deg, #8a2be2, #da70d6);
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .add-note {
   margin-bottom: 20px;
 }
@@ -22,7 +21,7 @@
 
 input, textarea {
   width: 100%;
-  padding: 10px;
+  padding: 8px;
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;

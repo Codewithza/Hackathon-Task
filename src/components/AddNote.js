@@ -38,4 +38,6 @@ const AddNote = () => {
   );
 };
 
+
+
 export default AddNote;
